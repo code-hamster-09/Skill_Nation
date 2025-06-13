@@ -1,0 +1,35 @@
+.primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+}
+
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: var(--transition);
+  cursor: pointer;
+  
+  &:hover {
+    background-color: var(--background-alt);
+  }
+}

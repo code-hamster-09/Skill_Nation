@@ -1,0 +1,118 @@
+.quizContainer {
+  font-family: "Nunito", sans-serif;  
+
+  margin: 2rem 4rem;
+  padding: 2rem;
+  background-color: rgba($color: #cecbfc, $alpha: .4);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 10px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #736bff;
+  transition: width 0.3s ease;
+}
+
+.questionSection {
+  margin-bottom: 20px;
+}
+
+.questionText {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.optionButton {
+  padding: 12px 15px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 16px;
+}
+
+.optionButton:hover {
+  background-color: #736bff;
+  color: white;
+}
+
+.resultSection {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.resultSection h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.resultSection p {
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+
+.careersList {
+  columns: 2;
+  padding-left: 20px;
+}
+
+.careersList li {
+  margin-bottom: 8px;
+  color: #736bff;
+}
+
+.restartButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #736bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restartButton:hover {
+  background-color: #625cd2;
+}
+
+@media (max-width: 480px) {
+  .quizContainer {
+    padding: 15px;
+  }
+  
+  .careersList {
+    columns: 1;
+  }
+}
