@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import NotFound from "./pages/NotFound/NotFound";
 import ProfessionsPage from "./pages/ProfessionsPage/ProfessionsPage";
 import StoriesPage from "./pages/StoriesPage/StoriesPage";
+import ProfilePage from "./pages/ProfilePage/ProfilePage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/stories" element={<StoriesPage />} />
         <Route path="/quiz" element={<CareerQuiz />} />
         <Route path="/auth" element={<AuthPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
